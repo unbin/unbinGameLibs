@@ -1,2 +1,2 @@
-# unbinSDL
-A custom library for SDL2.
+# unbinGameLibs
+My custom game libraries.
