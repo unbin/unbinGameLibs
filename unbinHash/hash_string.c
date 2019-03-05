@@ -24,8 +24,7 @@ char *hash(const char *string) {
   if (stringLen <= HASHSIZE) strcpy(hashedValue, string);
   else {
     short int counter = 0;
-    for (int i = HASHSIZE; i < stringLen; i++) {
-      counter++;
+    for (int i = HASHSIZE; i < stringLen; i++, counter++) {
       if (counter > HASHSIZE - 1) counter = 0;
       hashedValue[counter] &= string[i];
     }
