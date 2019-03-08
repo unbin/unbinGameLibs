@@ -61,5 +61,5 @@ void unbinHash_displayString(const char *string) {
     }
     printf("\n");
   }
-  else printf("unbinHash Error: Could not display string - null pointer.\n");
+  else fprintf(stderr, "unbinHash Error: Could not display string - null pointer.\n");
 }
