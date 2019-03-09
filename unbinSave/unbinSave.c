@@ -9,6 +9,7 @@ bool unbinSave_Save(const char *path, const char *saveData) {
   if (fp) {
     if (fprintf(fp, "%s\n", saveData) < 0) {
       fprintf(stderr, "unbinSave Error: Could not write save data to %s\n", path);
+      fclose(fp);
       return false;
     }
     fclose(fp);
